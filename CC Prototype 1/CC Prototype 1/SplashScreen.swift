@@ -12,42 +12,39 @@ struct SplashScreen: View {
     @State private var size = 0.8
     @State var opacity = 0.5
     var body: some View {
-        
         if isActive {
             ContentView()
         } else {
-            
-            
-            
-            VStack{
-                ZStack{
-                    let background = Color(red: 153/255, green: 195/255, blue: 247/255)
-                    background
-                        .ignoresSafeArea()
+            ZStack {
+                let backgroundColor = Color(red: 153/255, green: 195/255, blue: 247/255)
+                backgroundColor
+                    .ignoresSafeArea()
+                VStack {
                     VStack {
                         Image(systemName:"trophy.circle.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 100)
+                            .foregroundColor(.yellow)
                         Text("CommunityChampion")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .font(Font.custom("Arial", size: 26))
+                            .fontWeight(.heavy)
                             .bold()
-                            .foregroundStyle(.black)
+                            .foregroundStyle(.black.opacity(0.80))
                     }
-                    
-                    
                     .scaleEffect(size)
                     .opacity(opacity)
                     .onAppear {
                         withAnimation(.easeIn(duration: 1.2)) {
                             self.size = 0.9
                             self.opacity = 1.0
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-                                withAnimation {
-                                    self.isActive = true
-                                }
-                            }
-                            
+                        }
+                    }
+                }
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        withAnimation {
+                            self.isActive = true
                         }
                     }
                 }
@@ -55,7 +52,8 @@ struct SplashScreen: View {
         }
     }
 }
-
-#Preview {
-    SplashScreen()
+struct SplashScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        SplashScreen()
+    }
 }
