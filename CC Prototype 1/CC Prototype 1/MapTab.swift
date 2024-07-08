@@ -13,14 +13,18 @@ struct MapTab: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ZStack {
                 
-                Text("Map")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    .bold()
-                    .foregroundStyle(.black)
-                Spacer()
-                Map(coordinateRegion: $region)
+                VStack {
+                    
+//                    Text("Map")
+  //                      .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+    //                    .bold()
+      //                  .foregroundStyle(.black)
+        //            Spacer()
+                    Map(coordinateRegion: $region)
+                        .ignoresSafeArea()
+                }
             }
         }
     }
