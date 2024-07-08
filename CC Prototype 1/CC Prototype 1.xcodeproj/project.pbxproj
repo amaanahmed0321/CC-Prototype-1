@@ -15,6 +15,7 @@
 		ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5FFE12C3445B900078439 /* ContentView.swift */; };
 		ADC5FFE42C3445BB00078439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE32C3445BB00078439 /* Assets.xcassets */; };
 		ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */; };
+		ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		ADC5FFE12C3445B900078439 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADC5FFE32C3445BB00078439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				ADC5FFDF2C3445B900078439 /* CC_Prototype_1App.swift */,
 				ADC5FFE12C3445B900078439 /* ContentView.swift */,
+				ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */,
 				ADC5000F2C344F3C00078439 /* TasksTab.swift */,
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
@@ -151,6 +154,7 @@
 			files = (
 				ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */,
 				ADC5FFE02C3445B900078439 /* CC_Prototype_1App.swift in Sources */,
+				ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */,
 				ADC500102C344F3C00078439 /* TasksTab.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
