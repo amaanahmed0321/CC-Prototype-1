@@ -21,7 +21,7 @@ struct TasksTab: View {
                     Spacer()
                 Color.white
                     .ignoresSafeArea()
-                    .frame(height: 10)
+                    .frame(height: 9)
             }
             VStack {
                 Color.white
