@@ -9,25 +9,33 @@ import SwiftUI
 
 struct TasksTab: View {
     var body: some View {
-        
-        VStack{
-           
-            Text("Tasks")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                .bold()
-                .foregroundStyle(.black)
-            
+        ZStack {
             let background = Color(red: 153/255, green: 195/255, blue: 247/255)
             background
-
-            Spacer()
-               
-            
-            
+                .ignoresSafeArea()
+            VStack{
+                    Text("Tasks")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .bold()
+                        .foregroundStyle(.black)
+                    Spacer()
+                Color.white
+                    .ignoresSafeArea()
+                    .frame(height: 10)
+            }
+            VStack {
+                Color.white
+                    .frame(height: 350)
+                    .cornerRadius(25.0)
+                Color.white
+                    .frame(height: 250)
+                    .cornerRadius(25.0)
+            }
+            VStack {
+                Image
+            }
         }
-      
     }
-    
 }
 
 #Preview {
