@@ -10,7 +10,7 @@ import SwiftUI
 struct TasksTab: View {
     var body: some View {
         ZStack {
-            let background = Color(red: 153/255, green: 195/255, blue: 247/255)
+            let background = Color(red: 240/255, green: 240/255, blue: 240/255)
             background
                 .ignoresSafeArea()
             VStack{
@@ -26,14 +26,29 @@ struct TasksTab: View {
             VStack {
                 Color.white
                     .frame(height: 350)
-                    .cornerRadius(25.0)
+                    //.cornerRadius(20.0)
                 Color.white
                     .frame(height: 250)
-                    .cornerRadius(25.0)
+                    //.cornerRadius(20.0)
             }
             VStack {
-                Image
+                Spacer()
+                    .frame(height: 90)
+                Image("trashCleaning")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .cornerRadius(20)
+                Text("#GreenEarth #SavethePlanet")
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .padding(.top)
+                Text("Help cleaning up the trash in your local park!")
+                    .padding(.top)
+                    .font(Font.custom("Sans", size: 17))
+                    .bold()
+                Spacer()
             }
+            .padding(.top)
         }
     }
 }
