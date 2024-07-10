@@ -22,6 +22,7 @@ struct MapTab: View {
     //                    .bold()
       //                  .foregroundStyle(.black)
         //            Spacer()
+                    
                     Map(coordinateRegion: $region)
                         .ignoresSafeArea()
                 }
