@@ -25,6 +25,10 @@ struct MapTab: View {
                     
                     Map(coordinateRegion: $region)
                         .ignoresSafeArea()
+                    Spacer()
+                    Color.white
+                        .ignoresSafeArea()
+                        .frame(height: 5)
                 }
             }
         }
