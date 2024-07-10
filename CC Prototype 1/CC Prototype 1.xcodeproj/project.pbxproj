@@ -16,7 +16,8 @@
 		ADC5FFE42C3445BB00078439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE32C3445BB00078439 /* Assets.xcassets */; };
 		ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */; };
 		ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */; };
-		EB53EDD92C3D9B1A0088839B /* TaskBarFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EDD82C3D9B1A0088839B /* TaskBarFeed.swift */; };
+		EB53EDDB2C3ECCDD0088839B /* TaskBarFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */; };
+		EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53EDDD2C3ED9120088839B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		ADC5FFE32C3445BB00078439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		EB53EDD82C3D9B1A0088839B /* TaskBarFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBarFeed.swift; sourceTree = "<group>"; };
+		EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBarFeed.swift; sourceTree = "<group>"; };
+		EB53EDDD2C3ED9120088839B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 			children = (
 				ADC5FFDE2C3445B900078439 /* CC Prototype 1 */,
 				ADC5FFDD2C3445B900078439 /* Products */,
+				EB53EDDC2C3ED9120088839B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +71,7 @@
 				ADC5FFE12C3445B900078439 /* ContentView.swift */,
 				ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */,
 				ADC5000F2C344F3C00078439 /* TasksTab.swift */,
-				EB53EDD82C3D9B1A0088839B /* TaskBarFeed.swift */,
+				EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */,
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
@@ -83,6 +87,14 @@
 				ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB53EDDC2C3ED9120088839B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB53EDDD2C3ED9120088839B /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB53EDD92C3D9B1A0088839B /* TaskBarFeed.swift in Sources */,
+				EB53EDDB2C3ECCDD0088839B /* TaskBarFeed.swift in Sources */,
 				ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */,
 				ADC5FFE02C3445B900078439 /* CC_Prototype_1App.swift in Sources */,
 				ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */,
@@ -301,8 +313,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +323,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ECC.CC-Prototype-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,8 +346,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,9 +356,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ECC.CC-Prototype-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
