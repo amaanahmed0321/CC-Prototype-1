@@ -24,10 +24,12 @@ struct TasksTab: View {
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                     Text("Help cleaning up the trash in your local park!")
                         .font(Font.custom("Sans", size: 17))
+                        .multilineTextAlignment(.leading)
                         .bold()
                 }
                 VStack {
                     Text("Do an act of kindness to those around you!")
+                        .multilineTextAlignment(.leading)
                 }
                 VStack {
                     Image("new_yellow")
@@ -36,6 +38,7 @@ struct TasksTab: View {
                     Text("NEW")
                         .foregroundColor(.yellow)
                         .font(Font.custom("Sans", size: 30))
+                        .fontWeight(.heavy)
                 }
                 VStack {
                     
@@ -53,7 +56,7 @@ struct TasksTab: View {
             }
             VStack{
                 ZStack {
-                    Color.white
+                    Color(red: 240/255, green: 240/255, blue: 240/255)
                         .ignoresSafeArea()
                         .frame(height: 34)
                     Text("Tasks")

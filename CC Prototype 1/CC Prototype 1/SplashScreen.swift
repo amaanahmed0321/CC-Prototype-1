@@ -16,7 +16,7 @@ struct SplashScreen: View {
             ContentView()
         } else {
             ZStack {
-                let backgroundColor = Color(red: 153/255, green: 195/255, blue: 247/255)
+                let backgroundColor = Color(red: 173/255, green: 215/255, blue: 247/255)
                 backgroundColor
                     .ignoresSafeArea()
                 VStack {
