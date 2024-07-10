@@ -22,9 +22,7 @@ struct TasksTab: View {
                         .cornerRadius(20)
                     Text("#GreenEarth #SavethePlanet")
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .padding(.top, 0.5)
                     Text("Help cleaning up the trash in your local park!")
-                        .padding(.top, 0.3)
                         .font(Font.custom("Sans", size: 17))
                         .bold()
                 }
@@ -36,12 +34,31 @@ struct TasksTab: View {
                         .resizable()
                         .scaledToFit()
                 }
+                VStack {
+                    
+                }
+                VStack {
+                    
+                }
+                VStack {
+                    
+                }
+                VStack {
+                    
+                }
+                
             }
             VStack{
+                ZStack {
+                    Color.white
+                        .ignoresSafeArea()
+                        .frame(height: 34)
                     Text("Tasks")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .bold()
                         .foregroundStyle(.black)
+                }
+                //.ignoresSafeArea()
                     Spacer()
                 Color.white
                     .ignoresSafeArea()
