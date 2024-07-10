@@ -33,6 +33,9 @@ struct TasksTab: View {
                     Image("new_yellow")
                         .resizable()
                         .scaledToFit()
+                    Text("NEW")
+                        .foregroundColor(.yellow)
+                        .font(Font.custom("Sans", size: 30))
                 }
                 VStack {
                     
