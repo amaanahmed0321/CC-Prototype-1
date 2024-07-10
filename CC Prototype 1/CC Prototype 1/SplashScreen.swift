@@ -25,7 +25,7 @@ struct SplashScreen: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 100)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.black)
                         Text("CommunityChampion")
                             .font(Font.custom("Arial", size: 26))
                             .fontWeight(.heavy)
