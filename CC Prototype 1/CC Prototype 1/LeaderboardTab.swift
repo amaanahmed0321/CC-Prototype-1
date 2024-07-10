@@ -20,7 +20,7 @@ struct LeaderboardTab: View {
                 .multilineTextAlignment(.leading)
                 .bold()
                 .foregroundStyle(.black)
-                .padding()
+                .padding(0.1)
             
             
             Spacer()
