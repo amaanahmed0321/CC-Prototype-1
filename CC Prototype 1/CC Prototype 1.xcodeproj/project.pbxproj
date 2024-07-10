@@ -17,6 +17,9 @@
 		ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */; };
 		ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */; };
 		EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53EDDD2C3ED9120088839B /* StoreKit.framework */; };
+		EB53EE002C3EF1C90088839B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EDFF2C3EF1C90088839B /* SwiftUIView.swift */; };
+		EB53EE022C3EF1E20088839B /* newYellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE012C3EF1E20088839B /* newYellow.swift */; };
+		EB53EE042C3EF1F00088839B /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE032C3EF1F00088839B /* new.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		EB53EDDD2C3ED9120088839B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EB53EDFF2C3EF1C90088839B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		EB53EE012C3EF1E20088839B /* newYellow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newYellow.swift; sourceTree = "<group>"; };
+		EB53EE032C3EF1F00088839B /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,11 @@
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
+				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
 				ADC5FFE52C3445BB00078439 /* Preview Content */,
+				EB53EDFF2C3EF1C90088839B /* SwiftUIView.swift */,
+				EB53EE012C3EF1E20088839B /* newYellow.swift */,
 			);
 			path = "CC Prototype 1";
 			sourceTree = "<group>";
@@ -166,6 +175,9 @@
 			files = (
 				ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */,
 				ADC5FFE02C3445B900078439 /* CC_Prototype_1App.swift in Sources */,
+				EB53EE002C3EF1C90088839B /* SwiftUIView.swift in Sources */,
+				EB53EE022C3EF1E20088839B /* newYellow.swift in Sources */,
+				EB53EE042C3EF1F00088839B /* new.swift in Sources */,
 				ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */,
 				ADC500102C344F3C00078439 /* TasksTab.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
