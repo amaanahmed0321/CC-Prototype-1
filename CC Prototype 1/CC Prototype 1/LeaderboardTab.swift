@@ -29,7 +29,7 @@ struct LeaderboardTab: View {
             
             Text("Player112's Progress")
                 .font(.title)
-                .padding()
+                .padding(.top, 7)
             
             ZStack {
                 Circle()
@@ -66,7 +66,7 @@ struct LeaderboardTab: View {
             Text("Top Players")
                 .font(.title2)
                 .bold()
-            Text("Your Placement #53")
+            Text("Your Placement #153")
                 .padding(0.5)
             Spacer()
             List {
