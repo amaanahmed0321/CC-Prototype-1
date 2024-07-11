@@ -15,21 +15,18 @@ struct SplashScreen: View {
         if isActive {
             ContentView()
         } else {
-            ZStack {
-                let backgroundColor = Color(red: 153/255, green: 195/255, blue: 247/255)
-                backgroundColor
-                    .ignoresSafeArea()
                 VStack {
                     VStack {
-                        Image(systemName:"trophy.circle.fill")
+                        Image(systemName:"trophy")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100)
+                            .frame(width: 120)
                             .foregroundColor(.black)
-                        Text("CommunityChampion")
-                            .font(Font.custom("Arial", size: 26))
-                            .fontWeight(.heavy)
-                            .bold()
+                        Text("Community Champion")
+                            .font(Font.custom("AcademyEngravedLetPlain", size: 40))
+                            .fontWeight(.light)
+                        
+                            
                             .foregroundStyle(.black.opacity(0.80))
                     }
                     .scaleEffect(size)
@@ -51,7 +48,7 @@ struct SplashScreen: View {
             }
         }
     }
-}
+
 struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreen()

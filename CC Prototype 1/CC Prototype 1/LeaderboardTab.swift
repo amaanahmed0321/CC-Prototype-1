@@ -70,7 +70,7 @@ struct LeaderboardTab: View {
                 .padding(0.5)
             Spacer()
             List {
-                Text("#1  Player244                              12986 pts")
+                Text("#1  Player244                              12990 pts")
                     .bold()
                     .foregroundColor(.yellow)
                 Text("#2 Player278                               12500 pts")
