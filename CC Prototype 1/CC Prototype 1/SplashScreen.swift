@@ -15,6 +15,12 @@ struct SplashScreen: View {
         if isActive {
             ContentView()
         } else {
+            
+            ZStack {
+                let backgroundColor = Color(red: 173/255, green: 215/255, blue: 247/255)
+                backgroundColor
+                    .ignoresSafeArea()
+                
                 VStack {
                     VStack {
                         Image(systemName:"trophy")
@@ -26,7 +32,7 @@ struct SplashScreen: View {
                             .font(Font.custom("AcademyEngravedLetPlain", size: 40))
                             .fontWeight(.light)
                         
-                            
+                        
                             .foregroundStyle(.black.opacity(0.80))
                     }
                     .scaleEffect(size)
@@ -48,9 +54,12 @@ struct SplashScreen: View {
             }
         }
     }
+}
+
 
 struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreen()
     }
 }
+

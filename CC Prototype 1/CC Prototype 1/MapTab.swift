@@ -9,7 +9,8 @@ import SwiftUI
 import MapKit
 
 struct MapTab: View {
-    @State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 41.9, longitude: -87.8), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+    
+    @StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
         NavigationView {
@@ -17,14 +18,12 @@ struct MapTab: View {
                 
                 VStack {
                     
-//                    Text("Map")
-  //                      .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-    //                    .bold()
-      //                  .foregroundStyle(.black)
-        //            Spacer()
-                    
-                    Map(coordinateRegion: $region)
+                    Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
                         .ignoresSafeArea()
+                        .accentColor(Color(.systemMint))
+                        .onAppear {
+                            viewModel.checkIfLocationServicesIsEnabled()
+                        }
                     Spacer()
                     Color.white
                         .ignoresSafeArea()

@@ -16,8 +16,9 @@
 		ADC5FFE42C3445BB00078439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE32C3445BB00078439 /* Assets.xcassets */; };
 		ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */; };
 		ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */; };
-		EB53EDDB2C3ECCDD0088839B /* TaskBarFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */; };
 		EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53EDDD2C3ED9120088839B /* StoreKit.framework */; };
+		EB53EE042C3EF1F00088839B /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE032C3EF1F00088839B /* new.swift */; };
+		EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE072C402F260088839B /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,9 @@
 		ADC5FFE32C3445BB00078439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBarFeed.swift; sourceTree = "<group>"; };
 		EB53EDDD2C3ED9120088839B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EB53EE032C3EF1F00088839B /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
+		EB53EE072C402F260088839B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +69,14 @@
 		ADC5FFDE2C3445B900078439 /* CC Prototype 1 */ = {
 			isa = PBXGroup;
 			children = (
+				ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */,
 				ADC5FFDF2C3445B900078439 /* CC_Prototype_1App.swift */,
 				ADC5FFE12C3445B900078439 /* ContentView.swift */,
-				ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */,
 				ADC5000F2C344F3C00078439 /* TasksTab.swift */,
-				EB53EDDA2C3ECCDD0088839B /* TaskBarFeed.swift */,
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
+				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
 				ADC5FFE52C3445BB00078439 /* Preview Content */,
 			);
@@ -84,6 +86,7 @@
 		ADC5FFE52C3445BB00078439 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				EB53EE072C402F260088839B /* ContentViewModel.swift */,
 				ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -167,11 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB53EDDB2C3ECCDD0088839B /* TaskBarFeed.swift in Sources */,
 				ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */,
 				ADC5FFE02C3445B900078439 /* CC_Prototype_1App.swift in Sources */,
+				EB53EE042C3EF1F00088839B /* new.swift in Sources */,
 				ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */,
 				ADC500102C344F3C00078439 /* TasksTab.swift in Sources */,
+				EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
 				ADC500142C344F6100078439 /* MapTab.swift in Sources */,
@@ -310,6 +314,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CC Prototype 1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CC Prototype 1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
