@@ -28,9 +28,9 @@ import SwiftUI
                     Image("ducky")
                                    .resizable()
                                    .aspectRatio(contentMode: .fit)
-                                   .frame(width: 150, height: 200, alignment: .center)
+                                   .frame(width: 155, height: 200, alignment: .center)
                                    .clipShape(Circle())
-                                   .overlay(Circle().stroke(Color.green,lineWidth: 5))
+                                   .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
                                    .position(x:70, y:75)
                     
                     VStack{
@@ -45,22 +45,39 @@ import SwiftUI
                     
                 }
                 .padding()
-                ZStack{
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .frame(width: 320, height: 150)
-                }
+                
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Text("Community Wrap")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .bold()
+                        .frame(width:300, height: 70)
+                        .foregroundColor(.white)
+                        .background(.purple)
+                        .overlay(Capsule().stroke(Color.black,lineWidth: 5))
+                        .position(x:200, y: 50)
+                        .clipShape(Capsule())
+                    })
+                        
+                   
+
+                        
+                
+               
+                
+             
         
             
            
-                    NavigationStack{
-                        List{
-                            NavigationLink("Settings"){}
-                            NavigationLink("Accessibility"){}
-                            NavigationLink("Privacy & Safety"){}
-                            NavigationLink("Account"){}
-                        }
-                        
+                NavigationStack{
+                    List{
+                        NavigationLink("Settings"){}
+                        NavigationLink("Accessibility"){}
+                        NavigationLink("Privacy & Safety"){}
+                        NavigationLink("Account"){}
                     }
+                    
+                }
                 
 
     }
