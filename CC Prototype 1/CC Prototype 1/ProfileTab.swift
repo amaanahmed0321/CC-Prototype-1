@@ -25,11 +25,14 @@ import SwiftUI
                 .scenePadding(.top)
         
                 HStack{
-                    Circle()
-                        .frame(width: 130, height: 130)
-                        .foregroundColor(.pink)
-                        .position(x: 50, y: 60)
-                        .padding()
+                    Image("ducky")
+                                   .resizable()
+                                   .aspectRatio(contentMode: .fit)
+                                   .frame(width: 150, height: 200, alignment: .center)
+                                   .clipShape(Circle())
+                                   .overlay(Circle().stroke(Color.green,lineWidth: 5))
+                                   .position(x:70, y:75)
+                    
                     VStack{
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 200, height: 150)
@@ -48,7 +51,6 @@ import SwiftUI
                 }
         
             
-
            
                     NavigationStack{
                         List{
