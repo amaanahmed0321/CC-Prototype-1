@@ -25,11 +25,14 @@ import SwiftUI
                 .scenePadding(.top)
         
                 HStack{
-                    Circle()
-                        .frame(width: 130, height: 130)
-                        .foregroundColor(.pink)
-                        .position(x: 50, y: 60)
-                        .padding()
+                    Image("ducky")
+                                   .resizable()
+                                   .aspectRatio(contentMode: .fit)
+                                   .frame(width: 155, height: 200, alignment: .center)
+                                   .clipShape(Circle())
+                                   .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
+                                   .position(x:70, y:75)
+                    
                     VStack{
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 200, height: 150)
@@ -42,23 +45,39 @@ import SwiftUI
                     
                 }
                 .padding()
-                ZStack{
-                    RoundedRectangle(cornerRadius: 25.0)
-                        .frame(width: 320, height: 150)
-                }
+                
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Text("Community Wrap")
+                        .bold()
+                        .frame(width: 300, height: 100)
+                        .foregroundColor(.black)
+                        .background(.yellow)
+                        .clipShape(Capsule())
+                        .position(x: 200, y:40)
+                    
+                        
+                })
+                        
+                   
+
+                        
+                
+               
+                
+             
         
             
-
            
-                    NavigationStack{
-                        List{
-                            NavigationLink("Settings"){}
-                            NavigationLink("Accessibility"){}
-                            NavigationLink("Privacy & Safety"){}
-                            NavigationLink("Account"){}
-                        }
-                        
+                NavigationStack{
+                    List{
+                        NavigationLink("Settings"){}
+                        NavigationLink("Accessibility"){}
+                        NavigationLink("Privacy & Safety"){}
+                        NavigationLink("Account"){}
                     }
+                    
+                }
                 
 
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD42FFC42C4588FB00BBA20F /* Community Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */; };
 		ADC500102C344F3C00078439 /* TasksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5000F2C344F3C00078439 /* TasksTab.swift */; };
 		ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC500112C344F5300078439 /* LeaderboardTab.swift */; };
 		ADC500142C344F6100078439 /* MapTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC500132C344F6100078439 /* MapTab.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Community Wrap.swift"; sourceTree = "<group>"; };
 		ADC5000F2C344F3C00078439 /* TasksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTab.swift; sourceTree = "<group>"; };
 		ADC500112C344F5300078439 /* LeaderboardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTab.swift; sourceTree = "<group>"; };
 		ADC500132C344F6100078439 /* MapTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTab.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
+				AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */,
 				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
 				EB53EE292C457F800088839B /* LoadingView.swift */,
@@ -205,6 +208,7 @@
 				EB53EE262C457F3E0088839B /* Bundle-Decodable.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
+				AD42FFC42C4588FB00BBA20F /* Community Wrap.swift in Sources */,
 				ADC500142C344F6100078439 /* MapTab.swift in Sources */,
 				EB53EE202C45728E0088839B /* TaskTabNew.swift in Sources */,
 			);
