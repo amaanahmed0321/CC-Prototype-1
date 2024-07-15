@@ -49,15 +49,15 @@ import SwiftUI
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("Community Wrap")
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .bold()
-                        .frame(width:300, height: 70)
-                        .foregroundColor(.white)
-                        .background(.purple)
-                        .overlay(Capsule().stroke(Color.black,lineWidth: 5))
-                        .position(x:200, y: 50)
+                        .frame(width: 300, height: 100)
+                        .foregroundColor(.black)
+                        .background(.yellow)
                         .clipShape(Capsule())
-                    })
+                        .position(x: 200, y:40)
+                    
+                        
+                })
                         
                    
 
