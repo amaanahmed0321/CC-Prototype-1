@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct TasksTab: View {
+    @EnvironmentObject var dataModel: DataModel
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 let background = Color(red: 245/255, green: 245/255, blue: 245/255)
                 background
                     .ignoresSafeArea()
                 List {
+                    //ForEach(dataModel.categories)
                     NavigationLink(destination: LeaderboardTab()) {
                         VStack {
                             Image("trashCleaning")
@@ -59,22 +61,7 @@ struct TasksTab: View {
                     }
                     
                 }
-                VStack{
-                    ZStack {
-                        Color(red: 240/255, green: 240/255, blue: 240/255)
-                            .ignoresSafeArea()
-                            .frame(height: 34)
-                        Text("Tasks")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .bold()
-                            .foregroundStyle(.black)
-                    }
-                    //.ignoresSafeArea()
-                    Spacer()
-                    Color.white
-                        .ignoresSafeArea()
-                        .frame(height: 9)
-                }
+                .navigationTitle("Tasks")
             }
         }
     }

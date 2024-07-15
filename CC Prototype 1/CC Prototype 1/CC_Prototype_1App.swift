@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct CC_Prototype_1App: App {
+    @StateObject private var dataModel = DataModel()
     var body: some Scene {
         WindowGroup {
             SplashScreen()

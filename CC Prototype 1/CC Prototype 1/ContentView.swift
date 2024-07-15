@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var dataModel: DataModel
     var body: some View {
         TabView {
             TasksTab()
@@ -31,7 +32,6 @@ struct ContentView: View {
                     Text("Profile")
                 }
         }
-     
     }
 }
 

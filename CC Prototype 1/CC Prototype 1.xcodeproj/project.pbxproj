@@ -19,6 +19,13 @@
 		EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53EDDD2C3ED9120088839B /* StoreKit.framework */; };
 		EB53EE042C3EF1F00088839B /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE032C3EF1F00088839B /* new.swift */; };
 		EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE072C402F260088839B /* ContentViewModel.swift */; };
+		EB53EE202C45728E0088839B /* TaskTabNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE1F2C45728E0088839B /* TaskTabNew.swift */; };
+		EB53EE262C457F3E0088839B /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE252C457F3E0088839B /* Bundle-Decodable.swift */; };
+		EB53EE282C457F680088839B /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE272C457F670088839B /* DataTypes.swift */; };
+		EB53EE2A2C457F800088839B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE292C457F800088839B /* LoadingView.swift */; };
+		EB53EE2C2C457F960088839B /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE2B2C457F960088839B /* ItemView.swift */; };
+		EB53EE382C4580E60088839B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE372C4580E60088839B /* DataModel.swift */; };
+		EB53EE3D2C45816E0088839B /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = EB53EE3C2C45816E0088839B /* content.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,13 @@
 		EB53EDDD2C3ED9120088839B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EB53EE032C3EF1F00088839B /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 		EB53EE072C402F260088839B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EB53EE1F2C45728E0088839B /* TaskTabNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTabNew.swift; sourceTree = "<group>"; };
+		EB53EE252C457F3E0088839B /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		EB53EE272C457F670088839B /* DataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		EB53EE292C457F800088839B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EB53EE2B2C457F960088839B /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		EB53EE372C4580E60088839B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EB53EE3C2C45816E0088839B /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +87,18 @@
 				ADC5FFDF2C3445B900078439 /* CC_Prototype_1App.swift */,
 				ADC5FFE12C3445B900078439 /* ContentView.swift */,
 				ADC5000F2C344F3C00078439 /* TasksTab.swift */,
+				EB53EE1F2C45728E0088839B /* TaskTabNew.swift */,
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
 				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
+				EB53EE292C457F800088839B /* LoadingView.swift */,
+				EB53EE2B2C457F960088839B /* ItemView.swift */,
+				EB53EE272C457F670088839B /* DataTypes.swift */,
+				EB53EE372C4580E60088839B /* DataModel.swift */,
+				EB53EE252C457F3E0088839B /* Bundle-Decodable.swift */,
+				EB53EE3C2C45816E0088839B /* content.json */,
 				ADC5FFE52C3445BB00078439 /* Preview Content */,
 			);
 			path = "CC Prototype 1";
@@ -160,6 +181,7 @@
 			files = (
 				ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */,
 				ADC5FFE42C3445BB00078439 /* Assets.xcassets in Resources */,
+				EB53EE3D2C45816E0088839B /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +195,18 @@
 				ADC5FFE22C3445B900078439 /* ContentView.swift in Sources */,
 				ADC5FFE02C3445B900078439 /* CC_Prototype_1App.swift in Sources */,
 				EB53EE042C3EF1F00088839B /* new.swift in Sources */,
+				EB53EE2C2C457F960088839B /* ItemView.swift in Sources */,
 				ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */,
+				EB53EE382C4580E60088839B /* DataModel.swift in Sources */,
 				ADC500102C344F3C00078439 /* TasksTab.swift in Sources */,
+				EB53EE2A2C457F800088839B /* LoadingView.swift in Sources */,
+				EB53EE282C457F680088839B /* DataTypes.swift in Sources */,
 				EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */,
+				EB53EE262C457F3E0088839B /* Bundle-Decodable.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
 				ADC500142C344F6100078439 /* MapTab.swift in Sources */,
+				EB53EE202C45728E0088839B /* TaskTabNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
