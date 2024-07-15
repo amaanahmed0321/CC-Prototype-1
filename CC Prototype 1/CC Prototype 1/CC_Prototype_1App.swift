@@ -13,6 +13,7 @@ struct CC_Prototype_1App: App {
     var body: some Scene {
         WindowGroup {
             SplashScreen()
+                .environmentObject(dataModel)
         }
     }
 }

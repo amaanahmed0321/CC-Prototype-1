@@ -11,7 +11,7 @@ struct ContentView: View {
     @EnvironmentObject var dataModel: DataModel
     var body: some View {
         TabView {
-            TasksTab()
+            TaskTabNew()
                 .tabItem {
                     Image(systemName: "note.text")
                     Text("Tasks")
