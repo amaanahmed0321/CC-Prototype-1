@@ -26,9 +26,16 @@ class DataModel: ObservableObject {
     }
 
     func add(to item: Item) {
+        @State var isParticipating: Bool = false
         objectWillChange.send()
         let currentCount = UserDefaults.standard.integer(forKey: item.id)
-        UserDefaults.standard.set(currentCount + 1, forKey: item.id)
+        if (isParticipating == false) {
+            isParticipating = true
+            UserDefaults.standard.set(currentCount + 1, forKey: item.id)
+        } else if (isParticipating == true){
+            isParticipating = false
+            UserDefaults.standard.set(currentCount - 1, forKey: item.id)
+        }
     }
 
     func reset() {

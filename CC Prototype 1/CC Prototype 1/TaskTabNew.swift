@@ -23,7 +23,7 @@ struct TaskTabNew: View {
                                     ItemView(item: item)
                                 }
                             }
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal)
                         }
                         .listRowInsets(EdgeInsets())
                     } header: {

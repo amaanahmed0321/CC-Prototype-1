@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "891448.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Moving-boxes-2.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Moving-boxes-2 1.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

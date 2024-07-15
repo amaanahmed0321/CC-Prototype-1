@@ -5,15 +5,15 @@
         "items": [
             {
                 "id": "Trash Cleaning",
-                "description": "Your parks need help to maintain clean."
+                "description": "Your local park need help to maintain clean."
             },
             {
-                "id": "Fruit Sandwiches",
-                "description": "Fruit and fresh cream – what's not to like?"
+                "id": "New Yellow",
+                "description": "NEW!!!"
             },
             {
-                "id": "7-Eleven Smoothies",
-                "description": "Frozen fruit and soy milk, blended right in front of you."
+                "id": "Need Help Moving Boxes",
+                "description": "There's too many boxes! I need help moving them!"
             },
             {
                 "id": "Milk Roll",

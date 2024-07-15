@@ -19,9 +19,9 @@ struct ItemView: View {
                 .frame(height: 400)
 
             VStack(spacing: 0) {
-                Rectangle()
+                /*Rectangle()
                     .fill(.white)
-                    .frame(height: 3)
+                    .frame(height: 3)*/
 
                 HStack(alignment: .top) {
                     VStack(alignment: .leading) {
@@ -38,7 +38,11 @@ struct ItemView: View {
                     Button {
                         dataModel.add(to: item)
                     } label: {
-                        Label(dataModel.count(for: item), systemImage: "person.fill")
+                        if (dataModel.count(for: item) == "0") {
+                            Label(dataModel.count(for: item), systemImage: "person")
+                        } else {
+                            Label(dataModel.count(for: item), systemImage: "person.fill")
+                        }
                     }
                     .buttonStyle(.plain)
                 }
@@ -50,8 +54,8 @@ struct ItemView: View {
                 .frame(maxWidth: .infinity)
             }
         }
-        .frame(width: 320)
-        .clipShape(RoundedRectangle(cornerRadius: 25))
+        .frame(width: 380)
+        .clipShape(RoundedRectangle(cornerRadius: 18))
         .shadow(color: .black.opacity(0.2), radius: 2)
         .padding(4)
     }
