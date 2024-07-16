@@ -16,15 +16,21 @@ struct GradientBackgroundAnimation: View {
     
     var body: some View {
         VStack(alignment: .leading){
+            ZStack{
+                Capsule()
+                    .foregroundColor(.white)
+                    .frame(width: 250, height: 60)
+                Text("Community Wrap")
+                    .padding(.top, 5)
+                    .font(.title)
+                    .bold()
+                    .multilineTextAlignment(.center)
             
-            Text("Community Wrap")
-                .padding(.top, 20)
-                .font(.title)
-                .bold()
-                
-            
+        }
+        
+       
             Text("A snapshot of our shared achievements in public service, highlighting completed tasks that make a difference in our neighborhood.")
-                .padding(.top, 10)
+                .padding(.top, 0)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 .padding(.bottom, 40)
             
@@ -33,6 +39,7 @@ struct GradientBackgroundAnimation: View {
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .bold()
                 .padding(.bottom, 5)
+            
             
             
             Text("Over the past month, you have actively participated in 15 activities, congratulations!")
@@ -49,15 +56,25 @@ struct GradientBackgroundAnimation: View {
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 .padding(.top, 1)
             
+            Text("Your Common Tasks:")
+                .font(.title)
+                .bold()
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                .padding(.top, 15)
+            
+            Text("You participate most in park cleanups and food kitchens, both of which are the highest needs in your community. ")
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             
             
-        
             
-           
+            
+            
+            
+            
             
             Spacer()
         }
-        
+    
         
         
         
@@ -73,6 +90,7 @@ struct GradientBackgroundAnimation: View {
                         animateGradient.toggle()
                     }
                 }
+        
         }
     }
 }
