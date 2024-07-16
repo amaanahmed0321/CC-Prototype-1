@@ -19,7 +19,7 @@ struct TasksTab: View {
                     //ForEach(dataModel.categories)
                     NavigationLink(destination: LeaderboardTab()) {
                         VStack {
-                            Image("trashCleaning")
+                            Image("Trash Cleaning")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 250)
@@ -36,9 +36,10 @@ struct TasksTab: View {
                         Text("Do an act of kindness to those around you!")
                             .multilineTextAlignment(.leading)
                     }
+
                     NavigationLink(destination: new()) {
                         VStack {
-                            Image("new_yellow")
+                            Image("New Yellow")
                                 .resizable()
                                 .scaledToFit()
                             Text("NEW")

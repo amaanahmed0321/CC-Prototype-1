@@ -11,75 +11,65 @@ import SwiftUI
             let background = Color(red: 153/255, green: 195/255, blue: 247/255)
             
             var body: some View {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Welcome Esther!")
-                            .font(.headline)
-                        Text("Your profile")
-                            .font(.subheadline)
+                VStack{
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Welcome Esther!")
+                                .font(.headline)
+                            Text("Your profile")
+                                .font(.subheadline)
+                                .bold()
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    .scenePadding(.top)
+                    
+                    HStack{
+                        Image("ducky")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 155, height: 200, alignment: .center)
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
+                            .position(x:70, y:75)
+                        
+                        VStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width: 200, height: 150)
+                                .foregroundColor(.yellow)
+                            Text("Your Milestones")
+                                .bold()
+                                .position(x:70, y:-5)
+                                .padding()
+                        }
+                        
+                    }
+                    .padding()
+                    
+                    
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Community Wrap")
                             .bold()
-                    }
-                    Spacer()
-                }
-                .padding()
-                .scenePadding(.top)
-        
-                HStack{
-                    Image("ducky")
-                                   .resizable()
-                                   .aspectRatio(contentMode: .fit)
-                                   .frame(width: 155, height: 200, alignment: .center)
-                                   .clipShape(Circle())
-                                   .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
-                                   .position(x:70, y:75)
-                    
-                    VStack{
-                        RoundedRectangle(cornerRadius: 20)
-                            .frame(width: 200, height: 150)
-                            .foregroundColor(.yellow)
-                        Text("Your Milestones")
-                            .bold()
-                            .position(x:80, y:0)
-                            .padding()
+                            .frame(width: 300, height: 100)
+                            .foregroundColor(.black)
+                            .background(.yellow)
+                            .clipShape(Capsule())
+                            .position(x: 200, y:40)
+                        
+                        
+                    })
+                    NavigationStack{
+                        List{
+                            NavigationLink("Settings"){}
+                            NavigationLink("Accessibility"){}
+                            NavigationLink("Privacy & Safety"){}
+                            NavigationLink("Account"){}
+                        }
+                        
                     }
                     
                 }
-                .padding()
-                
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Community Wrap")
-                        .bold()
-                        .frame(width: 300, height: 100)
-                        .foregroundColor(.black)
-                        .background(.yellow)
-                        .clipShape(Capsule())
-                        .position(x: 200, y:40)
-                    
-                        
-                })
-                        
-                   
-
-                        
-                
-               
-                
-             
-        
-            
-           
-                NavigationStack{
-                    List{
-                        NavigationLink("Settings"){}
-                        NavigationLink("Accessibility"){}
-                        NavigationLink("Privacy & Safety"){}
-                        NavigationLink("Account"){}
-                    }
-                    
-                }
-                
-
     }
 }
 
