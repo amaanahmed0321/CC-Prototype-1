@@ -48,7 +48,7 @@ import SwiftUI
                     .padding()
                     
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {}, label: {
                         Text("Community Wrap")
                             .bold()
                             .frame(width: 300, height: 100)
@@ -62,9 +62,10 @@ import SwiftUI
                     NavigationStack{
                         List{
                             NavigationLink("Settings"){}
-                            NavigationLink("Accessibility"){}
+    
                             NavigationLink("Privacy & Safety"){}
                             NavigationLink("Account"){}
+                            NavigationLink("Share and Connect"){}
                         }
                         
                     }
