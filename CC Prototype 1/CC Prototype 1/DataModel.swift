@@ -32,6 +32,8 @@ class DataModel: ObservableObject {
             UserDefaults.standard.set(currentCount + 1, forKey: item.id)
         } else if (currentCount > 0){
             UserDefaults.standard.set(currentCount - 1, forKey: item.id)
+        } else {
+            UserDefaults.standard.set(currentCount + 1, forKey: item.id)
         }
     }
 
