@@ -38,10 +38,10 @@ struct ItemView: View {
                     Button {
                         dataModel.add(to: item)
                     } label: {
-                        if (dataModel.count(for: item) == "0") {
-                            Label(dataModel.count(for: item), systemImage: "person")
-                        } else {
+                        if (dataModel.count(for: item) != "0") {
                             Label(dataModel.count(for: item), systemImage: "person.fill")
+                        } else {
+                            Label(dataModel.count(for: item), systemImage: "person")
                         }
                     }
                     .buttonStyle(.plain)
