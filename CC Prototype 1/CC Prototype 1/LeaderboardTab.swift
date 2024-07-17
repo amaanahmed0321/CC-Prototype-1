@@ -11,9 +11,9 @@ struct LeaderboardTab: View {
     @State private var amount: CGFloat = 0
     
     let background = Color(red: 153/255, green: 195/255, blue: 247/255)
-   
+    
     var body: some View {
-        
+        NavigationView {
         VStack{
             Text("Leaderboard")
                 .font(.title)
@@ -63,12 +63,19 @@ struct LeaderboardTab: View {
             Text("50 Points Until Milestone #1")
                 .padding(.bottom, 20.0)
             
+            
+            
+            
             Text("Top Players")
                 .font(.title2)
                 .bold()
             Text("Your Placement #153")
                 .padding(0.5)
             Spacer()
+            
+             NavigationLink(destination:LeaderboardTopCommunities()){Text("Top Communities")}
+            
+            
             List {
                 Text("#1  Player244                              12990 pts")
                     .bold()
@@ -76,29 +83,29 @@ struct LeaderboardTab: View {
                 Text("#2 Player278                               12500 pts")
                     .bold()
                     .foregroundColor(.gray)
-        
+                
                 Text("#3 Player209                               12150 pts")
                     .bold()
                     .foregroundColor(.brown)
                 Text("#4 Player256                              12000 pts")
-                             Text("#5 Player289                               11900 pts")
-                             Text("#6 Player297                               11750 pts")
-                             Text("#7 Player237                               11730 pts")
-                             Text("#8 Player298                               11710 pts")
-                             Text("#9 Player207                               11590 pts")
-                             Text("#10 Player249                             11110 pts")
-                             Text("#11 Player250                             10980 pts")
-                             Text("#12 Player281                             10900 pts")
-                             Text("#13 Player276                             10670 pts")
-                             Text("#14 Player200                             10300 pts")
-                             Text("#15 Player248                             10000 pts")
-
+                Text("#5 Player289                               11900 pts")
+                Text("#6 Player297                               11750 pts")
+                Text("#7 Player237                               11730 pts")
+                Text("#8 Player298                               11710 pts")
+                Text("#9 Player207                               11590 pts")
+                Text("#10 Player249                             11110 pts")
+                Text("#11 Player250                             10980 pts")
+                Text("#12 Player281                             10900 pts")
+                Text("#13 Player276                             10670 pts")
+                Text("#14 Player200                             10300 pts")
+                Text("#15 Player248                             10000 pts")
                 
                 
             }
+            }
             
         }
-      
+        
     }
 }
 
