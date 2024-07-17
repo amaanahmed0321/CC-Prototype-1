@@ -28,11 +28,13 @@ import SwiftUI
                     HStack{
                         Image("ducky")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
+                            .aspectRatio(contentMode: .fill)
                             .frame(width: 155, height: 200, alignment: .center)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
                             .position(x:70, y:75)
+                        
                         
                         VStack{
                             RoundedRectangle(cornerRadius: 20)
@@ -48,7 +50,7 @@ import SwiftUI
                     .padding()
                     
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {}, label: {
                         Text("Community Wrap")
                             .bold()
                             .frame(width: 300, height: 100)
@@ -62,9 +64,10 @@ import SwiftUI
                     NavigationStack{
                         List{
                             NavigationLink("Settings"){}
-                            NavigationLink("Accessibility"){}
+    
                             NavigationLink("Privacy & Safety"){}
                             NavigationLink("Account"){}
+                            NavigationLink("Share and Connect"){}
                         }
                         
                     }

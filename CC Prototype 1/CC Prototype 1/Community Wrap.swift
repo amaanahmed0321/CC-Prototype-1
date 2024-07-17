@@ -26,8 +26,30 @@ struct GradientBackgroundAnimation: View {
             Text("A snapshot of our shared achievements in public service, highlighting completed tasks that make a difference in our neighborhood.")
                 .padding(.top, 10)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                .padding(.bottom, 40)
             
-            Spacer()
+            
+            Text("15 Tasks Completed ")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .bold()
+                .padding(.bottom, 5)
+            
+            
+            Text("Over the past month, you have actively participated in 15 activities, congratulations!")
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                .padding(.bottom, 20)
+            
+            
+            Text("28 Active Community Members")
+                .font(.title)
+                .bold()
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+            
+            Text("You are a part of a great community, connect with members through tasks & invite your loved ones through our share & connect button on your profile.   ")
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                .padding(.top, 1)
+            
+            
             
         
             
@@ -35,6 +57,10 @@ struct GradientBackgroundAnimation: View {
             
             Spacer()
         }
+        
+        
+        
+        
         .frame(maxWidth: .infinity)
         .foregroundColor(.black)
         .padding(.horizontal)
