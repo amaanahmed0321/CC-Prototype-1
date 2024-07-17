@@ -50,7 +50,7 @@ import SwiftUI
                     .padding()
                     
                     
-                    Button(action: {}, label: {
+                    Button(destination: Community_Wrap(), label: {
                         Text("Community Wrap")
                             .bold()
                             .frame(width: 300, height: 100)

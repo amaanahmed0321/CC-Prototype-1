@@ -97,7 +97,6 @@ struct LeaderboardTab: View {
                 
             }
             
-            
         }
       
     }
