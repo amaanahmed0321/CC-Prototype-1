@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD42FFC42C4588FB00BBA20F /* Community Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */; };
 		ADC500102C344F3C00078439 /* TasksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5000F2C344F3C00078439 /* TasksTab.swift */; };
 		ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC500112C344F5300078439 /* LeaderboardTab.swift */; };
 		ADC500142C344F6100078439 /* MapTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC500132C344F6100078439 /* MapTab.swift */; };
@@ -17,6 +16,7 @@
 		ADC5FFE42C3445BB00078439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE32C3445BB00078439 /* Assets.xcassets */; };
 		ADC5FFE72C3445BB00078439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */; };
 		ADED14782C3C3FD70024ABC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */; };
+		ADF258442C46CD7D008808DD /* LeaderboardTopCommunities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF258432C46CD7D008808DD /* LeaderboardTopCommunities.swift */; };
 		EB53EDDE2C3ED9130088839B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB53EDDD2C3ED9120088839B /* StoreKit.framework */; };
 		EB53EE042C3EF1F00088839B /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE032C3EF1F00088839B /* new.swift */; };
 		EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53EE072C402F260088839B /* ContentViewModel.swift */; };
@@ -30,10 +30,10 @@
 		EB5A40182C46BF8E00B0742C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5A40162C46BF8E00B0742C /* Assets.xcassets */; };
 		EB5A401C2C46C00900B0742C /* Confetti.sks in Resources */ = {isa = PBXBuildFile; fileRef = EB5A401B2C46C00900B0742C /* Confetti.sks */; };
 		EB5A40212C46D08D00B0742C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB5A40202C46D08D00B0742C /* ConfettiSwiftUI */; };
+		EBC42BB42C497A6F00A54B0C /* CommunityWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Community Wrap.swift"; sourceTree = "<group>"; };
 		ADC5000F2C344F3C00078439 /* TasksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTab.swift; sourceTree = "<group>"; };
 		ADC500112C344F5300078439 /* LeaderboardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTab.swift; sourceTree = "<group>"; };
 		ADC500132C344F6100078439 /* MapTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTab.swift; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		ADC5FFE32C3445BB00078439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC5FFE62C3445BB00078439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADED14772C3C3FD70024ABC3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		ADF258432C46CD7D008808DD /* LeaderboardTopCommunities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTopCommunities.swift; sourceTree = "<group>"; };
 		EB53EDDD2C3ED9120088839B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EB53EE032C3EF1F00088839B /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 		EB53EE072C402F260088839B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		EB53EE3C2C45816E0088839B /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		EB5A40162C46BF8E00B0742C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5A401B2C46C00900B0742C /* Confetti.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Confetti.sks; sourceTree = "<group>"; };
+		EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityWrap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 				ADC5000F2C344F3C00078439 /* TasksTab.swift */,
 				EB53EE1F2C45728E0088839B /* TaskTabNew.swift */,
 				ADC500112C344F5300078439 /* LeaderboardTab.swift */,
+				ADF258432C46CD7D008808DD /* LeaderboardTopCommunities.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
-				AD42FFC32C4588FB00BBA20F /* Community Wrap.swift */,
+				EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */,
 				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
 				EB53EE292C457F800088839B /* LoadingView.swift */,
@@ -223,10 +226,11 @@
 				EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */,
 				EB53EE262C457F3E0088839B /* Bundle-Decodable.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
+				EBC42BB42C497A6F00A54B0C /* CommunityWrap.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
-				AD42FFC42C4588FB00BBA20F /* Community Wrap.swift in Sources */,
 				ADC500142C344F6100078439 /* MapTab.swift in Sources */,
 				EB53EE202C45728E0088839B /* TaskTabNew.swift in Sources */,
+				ADF258442C46CD7D008808DD /* LeaderboardTopCommunities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
