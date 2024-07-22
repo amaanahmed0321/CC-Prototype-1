@@ -50,7 +50,7 @@ import SwiftUI
                     .padding()
                     
                     
-                    Button(destination: Community_Wrap(), label: {
+                    Button(action: {}) {
                         Text("Community Wrap")
                             .bold()
                             .frame(width: 300, height: 100)
@@ -60,7 +60,7 @@ import SwiftUI
                             .position(x: 200, y:40)
                         
                         
-                    })
+                    }
                     NavigationStack{
                         List{
                             NavigationLink("Settings"){}
