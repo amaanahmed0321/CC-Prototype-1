@@ -27,7 +27,7 @@ struct LeaderboardTab: View {
             
             
             
-            Text("Player112's Progress")
+            Text("User112's Progress")
                 .font(.title)
                 .padding(.top, 7)
             
@@ -53,10 +53,10 @@ struct LeaderboardTab: View {
             }
             
             .onAppear() {
-                amount = 0.95
+                amount = 0.85
             }
             .padding()
-            Text("950/1000")
+            Text("850/1000")
                 .foregroundColor(background)
                 .font(.title3)
                 .bold()

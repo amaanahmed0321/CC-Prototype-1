@@ -11,14 +11,17 @@ import SwiftUI
             let background = Color(red: 153/255, green: 195/255, blue: 247/255)
             
             var body: some View {
+                NavigationStack{
                 VStack{
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("Welcome Esther!")
-                                .font(.headline)
+                            Text("Welcome User112!")
+                                .font(Font.custom("Apple SD Gothic Neo Medium", size: 30))
+                                .padding(.bottom, 2.0)
                             Text("Your profile")
                                 .font(.subheadline)
                                 .bold()
+                                .padding(.bottom, 0.5)
                         }
                         Spacer()
                     }
@@ -33,7 +36,7 @@ import SwiftUI
                             .frame(width: 155, height: 200, alignment: .center)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
-                            .position(x:70, y:75)
+                            .position(x:85, y:60)
                         
                         
                         VStack{
@@ -41,6 +44,7 @@ import SwiftUI
                                 .frame(width: 200, height: 150)
                                 .foregroundColor(.yellow)
                             Text("Your Milestones")
+                                .font(Font.custom("Apple SD Gothic Neo Medium", size: 20))
                                 .bold()
                                 .position(x:70, y:-5)
                                 .padding()
@@ -49,26 +53,24 @@ import SwiftUI
                     }
                     .padding()
                     
-                    
-                    Button(action: {}) {
+                    NavigationLink(destination: GradientBackgroundAnimation()) {
                         Text("Community Wrap")
+                            .font(Font.custom("Apple SD Gothic Neo Medium", size: 21))
                             .bold()
                             .frame(width: 300, height: 100)
                             .foregroundColor(.black)
                             .background(.yellow)
                             .clipShape(Capsule())
-                            .position(x: 200, y:40)
-                        
-                        
+                            .position(x: 215, y:40)
                     }
-                    NavigationStack{
                         List{
                             NavigationLink("Settings"){}
-    
                             NavigationLink("Privacy & Safety"){}
                             NavigationLink("Account"){}
                             NavigationLink("Share and Connect"){}
                         }
+                        .frame(height: 290)
+                        //.position(y: 40)
                         
                     }
                     

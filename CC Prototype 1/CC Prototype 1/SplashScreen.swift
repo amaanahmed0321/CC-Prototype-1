@@ -11,29 +11,40 @@ struct SplashScreen: View {
     @State private var isActive = false
     @State private var size = 0.8
     @State var opacity = 0.5
+    @State private var isRotating = 0.0
     var body: some View {
         if isActive {
             ContentView()
         } else {
             
             ZStack {
-                let backgroundColor = Color(red: 173/255, green: 215/255, blue: 247/255)
+                let backgroundColor = Color.white
+                //Color(red: 173/255, green: 215/255, blue: 247/255)
                 backgroundColor
                     .ignoresSafeArea()
                 
                 VStack {
                     VStack {
-                        Image(systemName:"trophy")
+                        Image("circleBlue")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 120)
+                            .frame(width: 750)
                             .foregroundColor(.black)
-                        Text("Community Champion")
-                            .font(Font.custom("AcademyEngravedLetPlain", size: 40))
+                            //.position(x: 205, y: 378)
+                            .onAppear {
+                                withAnimation(.linear(duration: 1)
+                                    .speed(0.1).repeatForever(autoreverses: false)) {
+                                    isRotating = 360.0
+                                }
+                            }
+                        Text("CommuniCircle")
+                            .font(Font.custom("Arial", size: 40))
+                            .fontWeight(.bold)
                             .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(.blue.opacity(0.80))
+                            }
                         
-                        
-                            .foregroundStyle(.black.opacity(0.80))
                     }
                     .scaleEffect(size)
                     .opacity(opacity)
@@ -54,7 +65,7 @@ struct SplashScreen: View {
             }
         }
     }
-}
+
 
 
 struct SplashScreen_Previews: PreviewProvider {

@@ -30,7 +30,7 @@
 		EB5A40182C46BF8E00B0742C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5A40162C46BF8E00B0742C /* Assets.xcassets */; };
 		EB5A401C2C46C00900B0742C /* Confetti.sks in Resources */ = {isa = PBXBuildFile; fileRef = EB5A401B2C46C00900B0742C /* Confetti.sks */; };
 		EB5A40212C46D08D00B0742C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB5A40202C46D08D00B0742C /* ConfettiSwiftUI */; };
-		EBC42BB42C497A6F00A54B0C /* CommunityWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */; };
+		EBC42BB62C4EB96F00A54B0C /* CommunityWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC42BB52C4EB96F00A54B0C /* CommunityWrap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,7 @@
 		EB53EE3C2C45816E0088839B /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		EB5A40162C46BF8E00B0742C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5A401B2C46C00900B0742C /* Confetti.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Confetti.sks; sourceTree = "<group>"; };
-		EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityWrap.swift; sourceTree = "<group>"; };
+		EBC42BB52C4EB96F00A54B0C /* CommunityWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityWrap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				ADF258432C46CD7D008808DD /* LeaderboardTopCommunities.swift */,
 				ADC500132C344F6100078439 /* MapTab.swift */,
 				ADC500152C344F6D00078439 /* ProfileTab.swift */,
-				EBC42BB32C497A6E00A54B0C /* CommunityWrap.swift */,
+				EBC42BB52C4EB96F00A54B0C /* CommunityWrap.swift */,
 				EB53EE032C3EF1F00088839B /* new.swift */,
 				ADC5FFE32C3445BB00078439 /* Assets.xcassets */,
 				EB53EE292C457F800088839B /* LoadingView.swift */,
@@ -226,7 +226,7 @@
 				EB53EE082C402F270088839B /* ContentViewModel.swift in Sources */,
 				EB53EE262C457F3E0088839B /* Bundle-Decodable.swift in Sources */,
 				ADC500162C344F6D00078439 /* ProfileTab.swift in Sources */,
-				EBC42BB42C497A6F00A54B0C /* CommunityWrap.swift in Sources */,
+				EBC42BB62C4EB96F00A54B0C /* CommunityWrap.swift in Sources */,
 				ADC500122C344F5300078439 /* LeaderboardTab.swift in Sources */,
 				ADC500142C344F6100078439 /* MapTab.swift in Sources */,
 				EB53EE202C45728E0088839B /* TaskTabNew.swift in Sources */,
