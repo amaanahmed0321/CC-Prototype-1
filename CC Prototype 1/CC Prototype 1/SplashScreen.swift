@@ -28,7 +28,7 @@ struct SplashScreen: View {
                         Image("circleBlue")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 750)
+                            .frame(width: 450)
                             .foregroundColor(.black)
                             //.position(x: 205, y: 378)
                             .onAppear {
@@ -37,12 +37,12 @@ struct SplashScreen: View {
                                     isRotating = 360.0
                                 }
                             }
-                        Text("CommuniCircle")
+                        /*Text("CommuniCircle")
                             .font(Font.custom("Arial", size: 40))
                             .fontWeight(.bold)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundStyle(.blue.opacity(0.80))
+                            .foregroundStyle(.blue.opacity(0.80))*/
                             }
                         
                     }
