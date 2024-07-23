@@ -35,8 +35,8 @@ import SwiftUI
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 155, height: 200, alignment: .center)
                             .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.yellow,lineWidth: 5))
-                            .position(x:85, y:60)
+                            .overlay(Circle().stroke(Color.blue,lineWidth: 5))
+                            .position(x:70, y:75)
                         
                         
                         VStack{
@@ -58,8 +58,8 @@ import SwiftUI
                             .font(Font.custom("Apple SD Gothic Neo Medium", size: 21))
                             .bold()
                             .frame(width: 300, height: 100)
-                            .foregroundColor(.black)
-                            .background(.yellow)
+                            .foregroundColor(.white)
+                            .background(.blue)
                             .clipShape(Capsule())
                             .position(x: 215, y:40)
                     }
