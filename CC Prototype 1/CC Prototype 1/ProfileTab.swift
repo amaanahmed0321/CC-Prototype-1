@@ -42,7 +42,9 @@ import SwiftUI
                         VStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 200, height: 150)
-                                .foregroundColor(.yellow)
+                                .overlay(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.blue,lineWidth: 5))
+                                .foregroundColor(.white)
+                                .frame(width: 200, height: 150)
                             Text("Your Milestones")
                                 .font(Font.custom("Apple SD Gothic Neo Medium", size: 20))
                                 .bold()
