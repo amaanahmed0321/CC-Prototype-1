@@ -5,32 +5,20 @@
         "items": [
             {
                 "id": "Let's Clean Up!",
-                "description": "Help brighten up your community!"
+                "description": "Help brighten up your community by picking up trash!"
             },
             {
-                "id": "New Yellow",
-                "description": "NEW!!!"
+                "id": "An Act of Kindness Everyday!",
+                "description": "Give people in your community an act of kindness. That can be your family, friends, or even strangers you meet along the way!"
             },
             {
                 "id": "Need Help Moving Boxes",
                 "description": "There's too many boxes! I need help moving them!"
-            }
-        ]
-    },
-    {
-        "id": "Nature",
-        "icon": "",
-        "items": [
+            },
             {
-                "id": "",
-                "description": "Made of purest green."
+                "id": "Need Help at the Food Pantry",
+                "description": "We need help with passing out food and resupplying."
             }
-        ]
-    },
-    {
-        "id": "Activities",
-        "icon": "figure.walk",
-        "items": [
         ]
     }
 ]

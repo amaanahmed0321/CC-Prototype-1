@@ -1,8 +1,8 @@
 //
-//  ItemView.swift
-//  LevelUp
+//  TaskTabNew.swift
+//  CC Prototype 1
 //
-//  Created by Paul Hudson on 08/08/2023.
+//  Created by sermacbook_16 on 7/15/24.
 //
 
 import SwiftUI
@@ -34,6 +34,8 @@ struct ItemView: View {
                         Text(item.description)
                             .font(.body)
                             .multilineTextAlignment(.leading)
+                        
+                        //Text(item.point)
                             
                     }
 

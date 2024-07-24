@@ -28,6 +28,7 @@ import SwiftUI
                     .padding()
                     .scenePadding(.top)
                     
+                    Spacer()
                     HStack{
                         Image("ducky")
                             .resizable()
@@ -36,13 +37,13 @@ import SwiftUI
                             .frame(width: 155, height: 200, alignment: .center)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(background,lineWidth: 5))
-                            .position(x:70, y:75)
-                        
+                            //.position(x:70, y:75)
+                        Spacer()
                         
                         VStack{
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 200, height: 150)
-                                .overlay(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(Color.blue,lineWidth: 5))
+                                .overlay(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/).stroke(background,lineWidth: 5))
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 150)
                             Text("Your Milestones")
@@ -51,7 +52,7 @@ import SwiftUI
                                 .position(x:85, y:-5)
                                 .padding()
                         }
-                        
+                        Spacer()
                     }
                     .padding()
                     
@@ -65,6 +66,7 @@ import SwiftUI
                             .clipShape(Capsule())
                             .position(x: 215, y:40)
                     }
+                    Spacer()
                         List{
                             NavigationLink("Settings"){}
                             NavigationLink("Privacy & Safety"){}
@@ -73,7 +75,7 @@ import SwiftUI
                         }
                         .frame(height: 290)
                         //.position(y: 40)
-                        
+                        Spacer()
                     }
                     
                 }
