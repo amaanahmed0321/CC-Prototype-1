@@ -28,7 +28,7 @@ struct SplashScreen: View {
                         Image("circleBlue")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 450)
+                            .frame(width: 465)
                             .foregroundColor(.black)
                             //.position(x: 205, y: 378)
                             .onAppear {

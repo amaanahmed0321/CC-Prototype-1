@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-
+let background = Color(red: 153/255, green: 195/255, blue: 247/255)
 struct GradientBackgroundAnimation: View {
-    
+
     @State private var animateGradient: Bool = false
     
     private let startColor: Color = .yellow
@@ -82,12 +82,14 @@ struct GradientBackgroundAnimation: View {
         .foregroundColor(.black)
         .padding(.horizontal)
         .multilineTextAlignment(.center)
-        .background {
+        .background
+         {
             LinearGradient(colors: [startColor, endColor], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
                 .onAppear {
                     withAnimation(.easeInOut(duration: 3).repeatForever(autoreverses: true)) {
                         animateGradient.toggle()
+                       
                     }
                 }
         

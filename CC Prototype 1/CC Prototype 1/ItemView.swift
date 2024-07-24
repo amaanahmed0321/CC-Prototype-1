@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import ConfettiSwiftUI
+import ConfettiSwiftUI
 
 struct ItemView: View {
     @EnvironmentObject var dataModel: DataModel
@@ -33,7 +33,7 @@ struct ItemView: View {
 
                         Text(item.description)
                             .font(.body)
-                            //.multilineTextAlignment(.center)
+                            .multilineTextAlignment(.leading)
                             
                     }
 
@@ -52,7 +52,7 @@ struct ItemView: View {
                         }
                     }
                     .buttonStyle(.plain)
-                    //.confettiCannon(counter: $counter, num: 30, opacity: 20, radius: 400)
+                    .confettiCannon(counter: $counter, num: 30, opacity: 20, radius: 400)
                 }
                 .font(.title3.bold())
                 .padding(10)
@@ -68,7 +68,7 @@ struct ItemView: View {
         .clipShape(RoundedRectangle(cornerRadius: 18))
         .shadow(color: .black.opacity(0.2), radius: 2)
         .padding(4)
-        //.confettiCannon(counter: $counter, num: 30, opacity: 20, radius: 300)
+        .confettiCannon(counter: $counter, num: 30, opacity: 20, radius: 300)
     }
 }
 
