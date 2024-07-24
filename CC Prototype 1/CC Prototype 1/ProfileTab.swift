@@ -8,7 +8,7 @@
 import SwiftUI
 
         struct ProfileTab: View {
-            let background = Color(red: 153/255, green: 195/255, blue: 247/255)
+            let background = Color(red: 65/255, green: 150/255, blue: 255/255)
             
             var body: some View {
                 NavigationStack{

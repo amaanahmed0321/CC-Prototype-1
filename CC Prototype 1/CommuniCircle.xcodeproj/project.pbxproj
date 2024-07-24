@@ -38,7 +38,7 @@
 		ADC500112C344F5300078439 /* LeaderboardTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTab.swift; sourceTree = "<group>"; };
 		ADC500132C344F6100078439 /* MapTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTab.swift; sourceTree = "<group>"; };
 		ADC500152C344F6D00078439 /* ProfileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTab.swift; sourceTree = "<group>"; };
-		ADC5FFDC2C3445B900078439 /* CC Prototype 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC Prototype 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5FFDC2C3445B900078439 /* CommuniCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommuniCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC5FFDF2C3445B900078439 /* CC_Prototype_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_Prototype_1App.swift; sourceTree = "<group>"; };
 		ADC5FFE12C3445B900078439 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADC5FFE32C3445BB00078439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		ADC5FFDD2C3445B900078439 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADC5FFDC2C3445B900078439 /* CC Prototype 1.app */,
+				ADC5FFDC2C3445B900078439 /* CommuniCircle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADC5FFDB2C3445B900078439 /* CC Prototype 1 */ = {
+		ADC5FFDB2C3445B900078439 /* CommuniCircle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADC5FFEA2C3445BB00078439 /* Build configuration list for PBXNativeTarget "CC Prototype 1" */;
+			buildConfigurationList = ADC5FFEA2C3445BB00078439 /* Build configuration list for PBXNativeTarget "CommuniCircle" */;
 			buildPhases = (
 				ADC5FFD82C3445B900078439 /* Sources */,
 				ADC5FFD92C3445B900078439 /* Frameworks */,
@@ -150,12 +150,12 @@
 			);
 			dependencies = (
 			);
-			name = "CC Prototype 1";
+			name = CommuniCircle;
 			packageProductDependencies = (
 				EB5A40202C46D08D00B0742C /* ConfettiSwiftUI */,
 			);
 			productName = "CC Prototype 1";
-			productReference = ADC5FFDC2C3445B900078439 /* CC Prototype 1.app */;
+			productReference = ADC5FFDC2C3445B900078439 /* CommuniCircle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADC5FFD72C3445B900078439 /* Build configuration list for PBXProject "CC Prototype 1" */;
+			buildConfigurationList = ADC5FFD72C3445B900078439 /* Build configuration list for PBXProject "CommuniCircle" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADC5FFDB2C3445B900078439 /* CC Prototype 1 */,
+				ADC5FFDB2C3445B900078439 /* CommuniCircle */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ECC.CC-Prototype-1";
+				PRODUCT_BUNDLE_IDENTIFIER = ECC.CommuniApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -427,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADC5FFD72C3445B900078439 /* Build configuration list for PBXProject "CC Prototype 1" */ = {
+		ADC5FFD72C3445B900078439 /* Build configuration list for PBXProject "CommuniCircle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADC5FFE82C3445BB00078439 /* Debug */,
@@ -436,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADC5FFEA2C3445BB00078439 /* Build configuration list for PBXNativeTarget "CC Prototype 1" */ = {
+		ADC5FFEA2C3445BB00078439 /* Build configuration list for PBXNativeTarget "CommuniCircle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADC5FFEB2C3445BB00078439 /* Debug */,
