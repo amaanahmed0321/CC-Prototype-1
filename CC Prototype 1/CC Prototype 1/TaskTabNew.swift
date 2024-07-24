@@ -18,9 +18,11 @@ struct TaskTabNew: View {
                         let items = dataModel.matchingItems(for: category)
 
                         ScrollView(.vertical, showsIndicators: false) {
-                            VStack {
-                                ForEach(items) { item in
-                                    ItemView(item: item)
+                            NavigationLink(destination: new()) {
+                                VStack {
+                                    ForEach(items) { item in
+                                        ItemView(item: item)
+                                    }
                                 }
                             }
                             .padding(.horizontal)
