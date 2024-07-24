@@ -11,8 +11,8 @@ struct GradientBackgroundAnimation: View {
 
     @State private var animateGradient: Bool = false
     
-    private let startColor: Color = .yellow
-    private let endColor: Color = .orange
+    private let startColor: Color = .white
+    private let endColor: Color = .blue
     
     var body: some View {
         VStack(alignment: .leading){
