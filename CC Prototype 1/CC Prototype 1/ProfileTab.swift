@@ -37,7 +37,7 @@ import SwiftUI
                             .frame(width: 155, height: 200, alignment: .center)
                             .clipShape(Circle())
                             .overlay(Circle().stroke(background,lineWidth: 5))
-                            //.position(x:70, y:75)
+                            .position(x:80, y:60)
                         Spacer()
                         
                         VStack{
